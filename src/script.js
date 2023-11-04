@@ -24,22 +24,32 @@ sections.forEach((section) => {
     section.classList.add("section--hidden");
 });
 
-// Projects Observer
-// const projects = document.querySelectorAll('.projects__row')
 
-// const revealProjects = function(entries, observer){
-//     const [entry] = entries
-//     if(!entry.isIntersecting) return;
-//     entry.target.classList.remove('section--hidden')
-//     observer.unobserve(entry.target)
+// HAMBURGER MENU :
+
+//   header__sm-menu--active
+const containerHead = document.querySelector(".header__sm-menu");
+
+// d-none [Display : none]
+const menuOpen = document.querySelector(".header__main-ham-menu");
+const menuClose = document.querySelector(".header__main-ham-menu-close");
+
+const controlHamburger = function () {
+  [menuClose, menuOpen].forEach((menu) => {
+    menu.addEventListener("click", function () {
+      console.log("click");
+
+      containerHead.classList.toggle("header__sm-menu--active");
+      menuOpen.classList.toggle("d-none");
+      menuClose.classList.toggle("d-none");
+    });
+  });
+};
+controlHamburger()
+// menuOpen.addEventListener("click", function () {
+
+// } else {
+//   containerHead.classList.add("header__sm-menu--active");
+//   menuClose.classList.add("d-none");
+//   menuOpen.classList.remove('d-none')
 // }
-
-// const projectsObserver = new IntersectionObserver(revealProjects, {
-//     root: null,
-//     threshold: 0.1,
-// })
-
-// projects.forEach(project=> {
-//     projectsObserver.observe(project)
-//     project.classList.add('section--hidden')
-// })
