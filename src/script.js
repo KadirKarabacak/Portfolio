@@ -24,13 +24,9 @@ sections.forEach((section) => {
     section.classList.add("section--hidden");
 });
 
-
 // HAMBURGER MENU :
-
-//   header__sm-menu--active
 const containerHead = document.querySelector(".header__sm-menu");
 
-// d-none [Display : none]
 const menuOpen = document.querySelector(".header__main-ham-menu");
 const menuClose = document.querySelector(".header__main-ham-menu-close");
 
@@ -45,11 +41,4 @@ const controlHamburger = function () {
     });
   });
 };
-controlHamburger()
-// menuOpen.addEventListener("click", function () {
-
-// } else {
-//   containerHead.classList.add("header__sm-menu--active");
-//   menuClose.classList.add("d-none");
-//   menuOpen.classList.remove('d-none')
-// }
+controlHamburger();
