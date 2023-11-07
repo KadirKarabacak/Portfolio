@@ -26,6 +26,7 @@ html {
     font-size: 65%;
   }
 }
+
 body {
   box-sizing: border-box;
   position: relative;
@@ -79,6 +80,7 @@ button {
   text-align: center;
   color: #111;
   font-weight: 800;
+  animation: headingPrimMoveIn 1s;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
@@ -160,11 +162,12 @@ button {
 
 .heading-sec__sub--lt a{
   font-weight: bold;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .heading-sec__sub--lt a:hover{
   color: #ff9100;
+  text-decoration: underline;
 }
 
 .heading-sm {
@@ -187,18 +190,27 @@ button {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
+  transition: transform .3s;
 }
 .btn:hover {
   transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem  rgba(0,0,0, 0.2);
 }
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.2);
+}
+
 .btn--bg {
   padding: 1.5rem 8rem;
   font-size: 2rem;
+  transition: .3s;
 }
 .btn--med {
   padding: 1.5rem 5rem;
   font-size: 1.6rem;
+  transition: .3s;
 }
 .btn--theme {
   background: #ff9100;
@@ -225,6 +237,7 @@ button {
   text-align: center;
   width: 100%;
   line-height: 1.6;
+  animation: textPrimMoveIn 1s;
 }
 @media only screen and (max-width: 37.5em) {
   .text-primary {
@@ -304,6 +317,7 @@ button {
   transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 92%;
+  backface-visibility: hidden;
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__content {
@@ -311,8 +325,10 @@ button {
     margin: auto;
     position: static;
     transform: translate(0, 0);
+    backface-visibility: hidden;
   }
 }
+
 .home-hero__info {
   margin: 3rem auto 0 auto;
   max-width: 80rem;
@@ -745,8 +761,35 @@ button {
   }
 }
 
-/* SCROLLBAR */
+@keyframes headingPrimMoveIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80%{
+    transform: translateX(5px)
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
+@keyframes textPrimMoveIn {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80%{
+    transform: translateX(-5px)
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* SCROLLBAR */
 *::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
