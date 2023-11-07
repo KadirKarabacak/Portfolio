@@ -85,6 +85,7 @@ button {
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
     font-size: 4.5rem;
+    animation: none;
   }
   .name{
     font-size: 60px;
@@ -242,6 +243,7 @@ button {
 @media only screen and (max-width: 37.5em) {
   .text-primary {
     font-size: 2rem;
+    animation: none;
   }
 }
 .d-none {
@@ -321,11 +323,10 @@ button {
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__content {
-    padding: 19rem 0 13rem 0;
+    padding: 28rem 0 20rem 0;
     margin: auto;
     position: static;
     transform: translate(0, 0);
-    backface-visibility: hidden;
   }
 }
 
@@ -501,6 +502,12 @@ button {
     padding: 0 2rem;
   }
 }
+
+/* @media only screen and (min-width: 57em){
+  .header__content{
+    padding: 1rem 15rem 1rem 5rem;
+  }
+} */
 .header__logo-container {
   display: flex;
   align-items: center;
