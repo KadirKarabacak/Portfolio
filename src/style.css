@@ -323,7 +323,7 @@ button {
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__content {
-    padding: 28rem 0 20rem 0;
+    padding: 14rem 0 13rem 0;
     margin: auto;
     position: static;
     transform: translate(0, 0);
@@ -572,7 +572,7 @@ button {
 .header__main-ham-menu-cont {
   display: none;
   width: 3rem;
-  padding: 2.2rem 0;
+  padding: 2.2rem 0;   
 }
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
