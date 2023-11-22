@@ -416,7 +416,7 @@ button {
 }
 
 .projects__row-img:hover {
-  transform: scale(0.98);
+  transform: scale(1.02);
 }
 
 .projects__row-content {
@@ -490,6 +490,13 @@ button {
   background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
+
+/* @media only screen and (max-width: 37.5em){
+  .header{
+    height: 8rem;
+  }
+} */
+
 .header__content {
   display: flex;
   align-items: center;
@@ -936,7 +943,13 @@ button {
 }
 .project-details__showcase-img {
   width: 100%;
+  transition: .5s;
 }
+.project-details__showcase-img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.4))
+}
+
 .project-details__content-main {
   width: 100%;
   max-width: 70rem;
