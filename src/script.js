@@ -1,15 +1,12 @@
 "use strict";
 // HAMBURGER MENU :
 const containerHead = document.querySelector(".header__sm-menu");
-
 const menuOpen = document.querySelector(".header__main-ham-menu");
 const menuClose = document.querySelector(".header__main-ham-menu-close");
 
 const controlHamburger = function () {
   [menuClose, menuOpen].forEach((menu) => {
     menu.addEventListener("click", function () {
-      console.log("click");
-
       containerHead.classList.toggle("header__sm-menu--active");
       menuOpen.classList.toggle("d-none");
       menuClose.classList.toggle("d-none");
@@ -17,7 +14,6 @@ const controlHamburger = function () {
   });
 };
 controlHamburger();
-
 
 // Section Revealing by Intersection Observer
 const sections = document.querySelectorAll(".reveal, .projects__row");

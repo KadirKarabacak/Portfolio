@@ -464,8 +464,8 @@ button {
       to right,
       rgba(245, 245, 245, 0.8),
       rgba(245, 245, 245, 0.8)
-    )
-    ,url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    ),
+    url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -488,14 +488,7 @@ button {
   width: 100%;
   z-index: 1000;
   background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
-
-/* @media only screen and (max-width: 37.5em){
-  .header{
-    height: 8rem;
-  }
-} */
 
 .header__content {
   display: flex;
@@ -943,11 +936,11 @@ button {
 }
 .project-details__showcase-img {
   width: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 .project-details__showcase-img:hover {
   transform: scale(1.02);
-  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.4))
+  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.4));
 }
 
 .project-details__content-main {
