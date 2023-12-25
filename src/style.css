@@ -724,6 +724,9 @@ button {
   border-radius: 5px;
   font-weight: 600;
   color: #666;
+  background-color: #ff9100;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .mouse {
   width: 25px;
