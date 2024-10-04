@@ -487,6 +487,7 @@ button {
     width: 100%;
     z-index: 1000;
     background: #fff;
+    box-shadow: 0 0px 18px rgba(0, 0, 0, 0.5);
 }
 
 .header__content {
@@ -597,6 +598,7 @@ button {
 .header__sm-menu--active {
     visibility: hidden;
     opacity: 0;
+    box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 37.5em) {
     .header__sm-menu--active {
@@ -604,6 +606,17 @@ button {
         opacity: 1;
     }
 }
+
+.header__sm-menu-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__sm-menu-link a i {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+    color: #ff9100;
+}
+
 .header__sm-menu-link a {
     display: block;
     text-decoration: none;
